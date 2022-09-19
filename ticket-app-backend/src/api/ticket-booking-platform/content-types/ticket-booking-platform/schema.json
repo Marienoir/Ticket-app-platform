@@ -4,36 +4,45 @@
   "info": {
     "singularName": "ticket-booking-platform",
     "pluralName": "ticket-booking-platforms",
-    "displayName": "Ticket-booking-platform"
+    "displayName": "Ticket-booking-platform",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
-    "Passengers": {
-      "type": "enumeration",
-      "enum": [
-        "Only 1",
-        "Between 2-5",
-        "Above 5"
-      ],
-      "default": "Only 1",
-      "required": true
-    },
-    "Name": {
+    "hero_title": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
       "type": "string",
       "required": true
     },
-    "Class": {
-      "type": "enumeration",
-      "enum": [
-        "Economy",
-        "Business ",
-        "First class"
-      ],
-      "default": "Economy",
+    "hero_text": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text",
       "required": true
+    },
+    "placeholders": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "placeholders.placeholders"
     }
   }
 }
